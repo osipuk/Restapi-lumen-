@@ -16,7 +16,7 @@ class mobileNetworkController extends Controller
     {
         $rules = array(
             'mccmnc' => 'required|string|max:6|min:5|unique:mobilenetwork',
-            'operator' => 'required|string|max:30',
+            'operator' => 'required',
         );
         foreach ($request->all() as $key => $value) {
             if (!in_array($key, $this->fields)) {
@@ -47,7 +47,7 @@ class mobileNetworkController extends Controller
         $mobilenetwork = new mobileNetwork();
         $mobilenetwork->mccmnc = $request->mccmnc;
         $mobilenetwork->operator = json_decode($request->operator, true)['id'];
-        $mobilenetwork->mvno = $request->mvno;
+        $mobilenetwork->mvno = json_decode($request->mvno, true)['id'];
         $mobilenetwork->save();
         return response(null, 201)->header('Location', '/global/v1/mobileNetwork/' . $mobilenetwork->id)
             ->header('Content-Type', 'application/json');

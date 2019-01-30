@@ -31,10 +31,10 @@ class MvnoController extends Controller
             return response()->json(['error' => $validator->errors()->all()], 400)
                 ->header('Content-Type', 'application/json');
         }
-        $mnvo = new Mnvo();
-        $mnvo->name = $request->name;
-        $mnvo->save();
-        return response(null, 201)->header('Location', '/global/v1/mvno/' . $mnvo->id)
+        $mvno = new Mvno();
+        $mvno->name = $request->name;
+        $mvno->save();
+        return response(null, 201)->header('Location', '/global/v1/mvno/' . $mvno->id)
             ->header('Content-Type', 'application/json');
     }
 

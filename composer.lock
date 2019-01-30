@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94305c97d0490a8c0a7a69594e02519a",
+    "content-hash": "da86d4ed2da70ebb9771da24b6b7f62c",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2576,6 +2576,54 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "albertcht/lumen-testing",
+            "version": "v0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/albertcht/lumen-testing.git",
+                "reference": "02d787bf233583e766e32b528855af8166c6ffb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/albertcht/lumen-testing/zipball/02d787bf233583e766e32b528855af8166c6ffb2",
+                "reference": "02d787bf233583e766e32b528855af8166c6ffb2",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/lumen-framework": "5.3.*|5.4.*|5.5.*|5.6.*|5.7.*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AlbertCht\\Lumen\\Testing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Albert Chen",
+                    "email": "albert.cht@gmail.com"
+                }
+            ],
+            "description": "Testing Suite For Lumen like Laravel does.",
+            "keywords": [
+                "laravel",
+                "lumen",
+                "phpunit",
+                "test",
+                "testing"
+            ],
+            "time": "2018-10-05T13:14:21+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.1.0",
