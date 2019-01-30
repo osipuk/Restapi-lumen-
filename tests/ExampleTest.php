@@ -1,23 +1,23 @@
 <?php
 
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
+// use Laravel\Lumen\Testing\DatabaseMigrations;
+// use Laravel\Lumen\Testing\DatabaseTransactions;
 
-class ExampleTest extends TestCase
-{
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
+// class ExampleTest extends TestCase
+// {
+//     /**
+//      * A basic test example.
+//      *
+//      */ @return void
+     
 
-    public function testExample3()
-    {
+//     public function testExample3()
+//     {
 
-        $this->post('/global/v1/country');
+//         $this->post('/global/v1/country');
 
-        $this->assertEquals(
-            $this->app->version(), $this->response->getContent()
-        );
-    }
-}
+//         $this->assertEquals(
+//             $this->app->version(), $this->response->getContent()
+//         );
+//     }
+// }
